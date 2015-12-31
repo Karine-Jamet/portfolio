@@ -1,0 +1,681 @@
+@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html, body, section {
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+.sumie{
+	width:100%;
+	height:100%;
+	text-align:center;
+	vertical-align:middle;
+	margin:auto;
+	background-color:#0b5394;
+	background-image: 
+	radial-gradient(circle at 100% 150%, #0b5394 24%, #3E87CA 25%, #3E87CA 28%, #0b5394 29%,  #0b5394 36%, #3E87CA 36%, #3E87CA 40%, transparent 40%, transparent),
+	radial-gradient(circle at 0    150%, #0b5394 24%, #3E87CA 25%, #3E87CA 28%, #0b5394 29%, #0b5394 36%, #3E87CA 36%, #3E87CA 40%, transparent 40%, transparent),
+	radial-gradient(circle at 50%  100%, #3E87CA 10%, #0b5394 11%, #0b5394 23%, #3E87CA 24%, #3E87CA 30%, #0b5394 31%, #0b5394 43%, #3E87CA 44%, #3E87CA 50%, #0b5394 51%, #0b5394 63%, #3E87CA 64%, #3E87CA 71%, transparent 71%, transparent),
+	radial-gradient(circle at 100% 50%, #3E87CA 5%, #0b5394 6%, #0b5394 15%, #3E87CA 16%, #3E87CA 20%, #0b5394 21%, #0b5394 30%, #3E87CA 31%, #3E87CA 35%, #0b5394 36%, #0b5394 45%, #3E87CA 46%, #3E87CA 49%, transparent 50%, transparent),
+	radial-gradient(circle at 0    50%, #3E87CA 5%, #0b5394  6%, #0b5394 15%, #3E87CA 16%, #3E87CA 20%, #0b5394 21%, #0b5394 30%, #3E87CA 31%, #3E87CA 35%, #0b5394 36%, #0b5394 45%, #3E87CA 46%, #3E87CA 49%, transparent 50%, transparent);
+	background-size:100px 50px;
+
+
+}
+
+.branche{
+	width:80%;
+	height:80%;
+	position:relative;
+	background-color:white;
+	vertical-align:middle;
+	display:inline-block;
+	margin-top:3.5%;
+	background-image:url('images/prunus.jpg');
+	background-size:75%;
+	background-repeat:no-repeat;
+	
+}
+
+.petale{
+	width:30px;
+	height:30px;
+	position:absolute;
+	background-color:pink;
+
+
+}
+
+.petale1{
+	top:50%;
+	left:30%;
+	background-image:url('images/petale1.jpg');
+	animation : down1 10s linear infinite, ondule1 10s linear infinite;
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+}
+.petale2{
+	top:69%;
+	left:50%;
+	animation : down2 10s linear infinite, ondule2 10s linear infinite;
+	background-image:url('images/petale2.jpg');
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+}
+.petale3{
+	top:58%;
+	left:60%;
+	height:36px;
+	animation : down3 10s linear infinite, ondule3 10s linear infinite;
+	background-image:url('images/petale3.jpg');
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+}
+
+@keyframes down1{
+	20%{top:50%; left:30%;}
+	100%{top:calc(100% - 30px); left:20% ;}
+	
+}
+@keyframes ondule1{
+	25%{left:30%;}
+	40%{left:25% ;}
+	60%{left:28%;}
+	80%{left:20%;}
+	100%{left:26% ;}
+}
+
+@keyframes down2{
+	5%{top:69%;}
+	100%{top:calc(100% - 30px) ;}
+	
+}
+@keyframes ondule2{
+	5%{left:50%;}
+	30%{left:45% ;}
+	50%{left:48%;}
+	75%{left:40%;}
+	100%{left:46% ;}
+}
+
+@keyframes down3{
+	25%{top:58%;}
+	100%{top:calc(100% - 30px) ;}
+	
+}
+
+@keyframes ondule3{
+	25%{left:60%;}
+	45%{left:65% ;}
+	65%{left:62%;}
+	85%{left:70%;}
+	100%{left:66% ;}
+}
+
+.menu{
+	position:absolute;
+	bottom:10%;
+	right:10%;
+	font-family: 'Nothing You Could Do', cursive;
+	
+}
+
+.menu li{
+	list-style:none;
+	display:inline;
+	font-size:30px;
+	margin-right:25px;
+	
+	
+}
+
+.menu a:hover {
+	color:black;
+	text-decoration:none;
+}
+
+.menu a:link, .menu a:visited {
+	color:black;
+	text-decoration:none;
+}
+
+.menu a {
+	color:black;
+}
+
+.menu .li-contact{
+	position:absolute;
+	bottom:95%;
+	right:80%;
+	z-index:2;
+
+	
+}
+
+.menu .sceaux{
+	position:absolute;
+	bottom:70%;
+	right:103%;
+	z-index:1;
+	width:15%;
+	height:auto;
+
+}
+
+.proj{
+	min-height:100%;
+	height:auto;
+	position:relative;
+	top:0;
+	left:0;
+	text-align:center;
+	padding-bottom:30px;
+	padding-top:30px;
+}
+
+.proj-top{
+	width:300px;
+	height:226px;
+	position:absolute;
+	top:0;
+	left:0;
+	background-image:url('images/projet-top.png');
+	background-repeat:no-repeat;
+	background-size:300px auto;
+	z-index:0;
+
+	
+}
+.proj-bot{
+	width:300px;
+	height:188px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background-image:url('images/projet-bottom.png');
+	background-repeat:no-repeat;
+	background-size:300px auto;
+	z-index:-1;
+	overflow:hidden;
+	
+	
+}
+
+.proj-detail{
+	display:inline-block;
+	width:380px;
+	height:400px;
+	
+	margin:10px;
+	text-align:center;
+}
+.description{
+	background-color:rgba(255, 255, 255, 0.7);
+	z-index:2;
+	
+}
+.proj h2 {
+	font-family: 'Nothing You Could Do', cursive;
+	font-size:50px;
+	margin:0;
+}
+
+.conteneur-apercu{
+	margin:auto;
+	position:relative;
+	z-index:1;
+	width:200px;
+	height:200px;
+	overflow:hidden;
+	border:1px solid transparent;
+}
+.apercu{
+	margin:auto;
+	width:200px;
+	height:200px;
+	
+}
+
+.proj h3{
+	margin-top:5px;
+	font-family: 'Nothing You Could Do', cursive;
+} 
+
+.proj > p {
+	margin:30px;
+} 
+.techno{
+	color:red;
+	font-size:12px;
+	word-spacing:10px;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.apercu01{
+	background-image:url('images/projet-paper.jpg');
+}
+
+.apercu02{
+	background-image:url('images/projet-codec.jpg');
+}
+.apercu03{
+	background-image:url('images/projet-matcha.jpg');
+}
+.apercu04{
+	background-image:url('images/projet-tir.jpg');
+}
+
+.date{
+	font-size:12px;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.proj-detail:hover .apercu{
+	
+	animation: animatedBackground 1s ease-out 1;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+    border:1px solid transparent;
+}
+
+@-webkit-keyframes animatedBackground {
+	0% {
+			-webkit-transform: scale(1, 1);
+			-moz-transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-o-transform: scale(1, 1);
+			transform: scale(1, 1)
+	}
+	100% {
+		-webkit-transform: scale(1.1, 1.1);
+		-moz-transform: scale(1.1, 1.1);
+		-ms-transform: scale(1.1, 1.1);
+		-o-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1)
+		}
+
+}
+
+.comp{
+	min-height:100%;
+	height:auto;
+	background-color:#0b5394;
+	padding-top:1%;
+	text-align: center;
+	
+}
+
+.comp h2{
+	margin-bottom:10%;
+	font-family: 'Nothing You Could Do', cursive;
+	font-size:50px;
+	color: white;
+	
+}
+.comp h3{
+	margin-bottom:30px;
+	color: white;
+	
+}
+
+.radar-graph{
+	display:inline-block;
+	text-align:center;
+	margin:auto;
+	width:540px ;
+	height:400px;
+	
+}
+
+.pie-graph{
+	display:inline-block;
+	text-align:center;
+	margin:auto;
+	width:540px ;
+	height:400px;
+	
+}
+.bar-graph{
+	display:inline-block;
+	text-align:center;
+	margin:auto;
+	width:540px ;
+	height:400px;
+	
+}
+
+
+.parcour-blouse{
+	position: relative;
+	top:0;
+	left:0;
+	height:100%;
+	width:auto;
+	overflow:hidden;
+
+	
+}
+
+.image-blouse{
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:auto;
+	z-index:-1;
+	
+	
+}
+
+.papillon{
+	background-image:url('images/papillon.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+	position: relative;
+	top:0;
+	left:0;
+	height:100%;
+	width:auto;
+	z-index:10;
+	
+	animation : boing 7s linear infinite;
+	transform-origin: 11% 8%;
+
+}
+@keyframes boing{
+	
+    30%{
+		
+		transform:rotate(0deg);
+	}
+    35%{
+		transform:rotate(15deg);
+	}
+	42%{
+		transform:rotate(-15deg);
+	}
+	50%{
+		transform:rotate(5deg);
+	}
+	60%{
+		transform:rotate(-5deg);
+	}
+	65%{
+		transform:rotate(3deg);
+	}
+	65%{
+		transform:rotate(-2deg);
+	}
+	70%{
+		transform:rotate(0deg);
+	}
+
+}
+
+.text-parcour{
+	position:relative;
+	top: -100%;
+    left: 35%;
+    width: 55%;
+}
+
+.text-parcour h2{
+	margin-bottom:5%;
+	font-family: 'Nothing You Could Do', cursive;
+	font-size:50px;
+	
+}
+
+.article span {
+	font-weight:bold;
+}
+
+.article {
+	margin:5%;
+	width:60%;
+	height:auto;
+	
+}
+
+.article h4 {
+	font-weight:bold;
+	font-size:20px;
+	margin-bottom:5%;
+	font-family: 'Nothing You Could Do', cursive;
+	
+}
+
+footer{
+	height:50%;
+	width:100%;
+	background-color:#0b5394;
+	color:white;
+	position:relative;
+	top:0%;
+	left:0%;
+	
+	
+}
+footer .container-photo{
+	position:absolute;
+	top:20%;
+	left:20%;
+	padding:20px;
+	width:20%;
+}
+
+footer .photo {
+	background-image:url("images/portrait.jpg");
+	opacity:1;
+	width:133px;
+	height:200px;
+	border:5px solid #F2BB6D;
+	float:left;
+	margin-right:20px;
+	
+}
+
+footer .container-milieu{
+	padding:20px;
+	position:absolute;
+	top:20%;
+	left:40%;
+	width:20%;
+}
+
+footer .container-droite{
+	padding:20px;
+	position:absolute;
+	top:20%;
+	left:60%;
+	width:20%;
+}
+
+ footer a{
+	font-weight:bold;
+	color:white;
+}
+ footer a:hover{
+	font-weight:bold;
+	color:white;
+	text-decoration:none;
+}
+
+footer a:link, footer a:visited { 
+	font-weight:bold;
+    color: white;
+	text-decoration:none;
+}
+
+
+i {
+	font-size:20px;
+	margin:10px;
+	vertical-align:middle;
+	margin-top:auto;
+	margin-bottom:auto;
+	
+}
+
+footer p {
+	vertical-align:middle;
+	margin-top:auto;
+	margin-bottom:15px;
+	
+}
+
+footer button{
+	display:block;
+	color:black;
+}
+
+
+#form-div {
+	width: 100%;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 15px;
+	border-radius: 0;
+	line-height: 15px;
+	background-color: #fbfbfb;
+	margin-bottom: 0px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+	padding-left:10%;
+}
+
+.feedback-input:focus{
+	font-size: 15px;
+	line-height: 15px;
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+	padding-left:10%;
+	}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 5%;
+	background-position: 1%;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 5%;
+	background-position: 1%;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 5%;
+	background-position: 1%;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 5%;
+	background-position: 1%;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 5%;
+	background-position-y: 0px;
+	background-position-x:1%;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:15px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:500;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 25px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+
+a#contact {
+    padding-bottom:10px;
+    cursor:pointer;
+}
+ 
+div#form-div {
+    position:absolute;
+    padding:10px;
+	display:block;
+}
+
+
