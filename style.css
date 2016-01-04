@@ -417,11 +417,20 @@ html, body, section {
 
 }
 
-.text-parcour{
+.text-parcour-wrapper{
 	position:relative;
 	top: -100%;
-  left: 45%;
-  width: 65%;
+  left: 35%;
+  width: 60%;
+	height:100%;
+	overflow:auto;
+
+}
+
+.text-parcour{
+	height:100%;
+	/*overflow-y: auto;*/
+
 }
 
 .text-parcour h2{
