@@ -290,6 +290,26 @@
 		}
 	});
 
+
+
+  $('.parcour').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+
+		 if (isInView) {
+
+       var imageTaille = $(".image-blouse").width();
+       var pointOrW = imageTaille/2;
+
+       var imageHaut = $(".image-blouse").height();
+        var pointOrH = (imageHaut/100)*8;
+
+       $(".papillon").css({
+         'transform-origin': pointOrW  + "px " + pointOrH +"px"
+       });
+
+     }
+   });
+
+
   var imageTaille = $(".image-blouse").width();
   var pointOrW = imageTaille/2;
 
@@ -324,6 +344,6 @@
  if(hauteur < (contactSize + $(".container-droite").height() + marge)){
    var toAdd = contactSize + hauteur;
    $("footer").height(toAdd);
- }  
+ }
 
 });
