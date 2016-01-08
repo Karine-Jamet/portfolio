@@ -29,23 +29,7 @@
 		return false;
 	});
 	
-	
-/* 	$("#submit").click(function() {
-		var name = $("#name").val();
-		var email = $("#email").val();
-		var message = $("#text").val();
 
-		$.post("traitement.php", {
-		name: name,
-		email: email,
-		message: message,
-		}, function(data) {
-		if (data == "Your Query has been received, We will contact you soon.") {
-		$("#form")[0].reset(); // To reset form fields on success.
-		}
-		});
-		}
-	}); */
 	
 	$('.radar-graph').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
  
@@ -323,16 +307,19 @@
 	 
 		}
 	});
-/* 	var submenu_active = false;
- 
-	$('#form-div').mouseenter(function() {
-		submenu_active = true;
+	$("#form").submit(function( event ) {
+		event.preventDefault();
+		$.ajax({
+			method: "POST",
+			url: "http://formspree.io/karine.jamet203@gmail.com",
+			data: { message: "test formspree" },
+			dataType: "json"
+		})
+		.done(function( msg ) {
+			alert( "E-mail envoyé!" );
+		});
 	});
-	 
-	$('#form-div').mouseleave(function() {
-		submenu_active = false;
-		setTimeout(function() { if (submenu_active === false) $('#form-div').fadeOut(); }, 400);
-	}); */
+
 	  
 	  
 	  
