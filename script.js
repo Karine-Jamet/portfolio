@@ -339,11 +339,27 @@
  var hauteur = $("footer").height();
  var marge = (hauteur/100)*20;
 
- console.log(hauteur);
  submenu.hide();
  if(hauteur < (contactSize + $(".container-droite").height() + marge)){
    var toAdd = contactSize + hauteur;
    $("footer").height(toAdd);
  }
+
+
+
+ $('.text-parcour').animate({
+     scrollTop: $('.text-parcour').parent().scrollTop() + $('.text-parcour').offset().top - $('.text-parcour').parent().offset().top
+ }, {
+     duration: 1000,
+     specialEasing: {
+         width: 'linear',
+         height: 'easeOutBounce'
+     },
+     complete: function (e) {
+         console.log("animation completed");
+     }
+ });
+
+
 
 });
