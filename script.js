@@ -231,7 +231,7 @@
 			var ctx = document.getElementById("barChart").getContext("2d");
 
 			var dataBar = {
-				labels: ["Aikido", "Cha no yu", "Lecture", "Jeux video", "Peinture", "Patisserie"],
+				labels: ["Aikido", "Cha no yu", "Lecture", "Jeux video", "Peinture", "Pâtisserie"],
 				datasets: [
 					{
 						label: "My First dataset",

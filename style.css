@@ -26,6 +26,7 @@ html, body, section {
   background-image: url('images/prunus.jpg');
   background-size: 75%;
   background-repeat: no-repeat;
+  overflow:hidden;
 }
 .petale {
   width: 30px;
