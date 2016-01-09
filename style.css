@@ -685,6 +685,8 @@ div#form-div {
 	  height: 26px;
 	  animation: down3 10s linear infinite, ondule3 10s linear infinite;
 	  -moz-animation: down3 10s linear infinite, ondule3 10s linear infinite;
+	  -webkit-animation: down3 10s linear infinite, ondule3 10s linear infinite;
+	  -o-animation: down3 10s linear infinite, ondule3 10s linear infinite;
 	  background-image: url('images/petale3.jpg');
 	  background-size: 100%;
 	  background-repeat: no-repeat;
@@ -766,6 +768,33 @@ div#form-div {
 		left: 76%;
 	  }
 	}
- }
+	
+	.menu {
+	  position: absolute;
+	  bottom: 10%;
+	  right: 10%;
+	  font-family: 'Nothing You Could Do', cursive;
+	}
+	.menu li {
+	  list-style: none;
+	  display: block;
+	  font-size: 20px;
+	  margin-right: 25px;
+	}
+
+	.menu .li-contact {
+	  position: absolute;
+	  bottom: -25px;
+	  right: 15px;
+	  z-index: 2;
+	}
+	.menu .sceaux {
+	  position: absolute;
+	  bottom: -60%;
+	  left: 60%;
+	  z-index: 1;
+	  width: 35%;
+	  height: auto;
+	 }
 
 
