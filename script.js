@@ -37,7 +37,7 @@
 		 if (isInView) {
 
 			var options = {
-
+			labelAlign: 'center',
 			segmentStrokeColor : "#094D8A",
 			//Boolean - If we show the scale above the chart data
 			scaleOverlay : false,
@@ -380,4 +380,5 @@
  });
 
 
-});
+
+ });

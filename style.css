@@ -631,3 +631,13 @@ div#form-div {
   padding: 10px;
   display: block;
 }
+
+
+
+
+/* Pour telephone */
+
+
+@media (max-width: @screen-xs-max) { ... }
+
+
