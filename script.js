@@ -18,7 +18,10 @@
 
 	});
 
-
+			$('.nav a').on('click', function(){
+				$('.btn-navbar').click(); //bootstrap 2.x
+				$('.navbar-toggle').click() //bootstrap 3.x by Richard
+			});
 
 	$('a[href^="#"]').click(function(){
 		var the_id = $(this).attr("href");
@@ -225,6 +228,7 @@
 		]
 
 			var myPieChart = new Chart(ctx).Pie(dataPie,options);
+
 
 
 
