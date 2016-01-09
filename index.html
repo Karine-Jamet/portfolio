@@ -13,8 +13,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.inview/0.2/jquery.inview.js"></script>
+	<!--<script src="js/src/perfect-scrollbar.js"></script>-->
 	<script type="text/javascript" src="script.js"></script>
-	
+
 	<!-- Meta -->
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -62,9 +63,10 @@
 			<ul class="menu">
 				<li> <img class="sceaux" src="images/sceaux.png"/></li>
 				<li class ="li-contact"><a href="#footer">Contact</a></li>
-				<li><a href="#parcour">Parcours</a></li>
-				<li><a href="#competences">Compétences</a></li>
 				<li><a href="#projet">Projets</a></li>
+				<li><a href="#competences">Compétences</a></li>
+				<li><a href="#parcour">Parcours</a></li>
+
 			</ul>
 		</div>
 	</section>
@@ -75,10 +77,10 @@
 		<p>Web developpeur junior en formation SIMPLonMARS à Centrale Marseille, je vous presente ici mes projets.</p>
 		<div class="proj-detail proj01">
 			<a href="http://paperjs-projet2.github.io/" target="_blank"><div class="conteneur-apercu"><div class="apercu apercu01"></div></div></a>
-			
+
 			<h3> PaperJS </h3>
 			<p class="techno">HTML5 CSS3 JAVASCRIPT PAPERJS GIT</p>
-			<p class="description">Projet developpé sur une semaine par une équipe de 3 personnes. Le sujet de l'exercice était de réaliser une animation avec la librairie paperJS. 
+			<p class="description">Projet developpé sur une semaine par une équipe de 3 personnes. Le sujet de l'exercice était de réaliser une animation avec la librairie paperJS.
 			Nous avons choisi de réaliser un petit jeu. Le defi fut la librairie paperJS en elle même assez difficile à utiliser en javascript. </p>
 			<p class="date">18 - 12 - 2015 </p>
 		</div>
@@ -86,7 +88,7 @@
 			<a href="http://co-code-codec.github.io/" target="_blank"><div class="conteneur-apercu"><div class="apercu apercu02"></div></div></a>
 			<h3> About us </h3>
 			<p class="techno">HTML5 CSS3 BOOTSTRAP GIT</p>
-			<p class="description">Projet developpé sur une semaine par une équipe de 4 personnes. Le sujet de l'exercice était de réaliser une page sur notre équipe. 
+			<p class="description">Projet developpé sur une semaine par une équipe de 4 personnes. Le sujet de l'exercice était de réaliser une page sur notre équipe.
 			Nous nous sommes inspirés des pages de présentation d'équipes et d'entreprises. Notre principale defi fut de rendre le site totalement responsive.</p>
 			<p class="date">04 - 12 - 2015 </p>
 		</div>
@@ -112,42 +114,40 @@
 		<h3 class="title">Je sais faire ... </h3>
 		<canvas id="radarChart" ></canvas>
 	  </div>
-	  
+
 	  	<!-- Pie Chart -->
 	  <div class="pie-graph">
 		<h3 class="title">Je suis ...</h3>
 		<canvas id="pieChart" ></canvas>
 	  </div>
-	  
+
 	  	<!-- Pie Chart -->
 	  <div class="bar-graph">
 		<h3 class="title">Je m'occupe avec ...</h3>
 		<canvas id="barChart" ></canvas>
 	  </div>
-	
+
 	</section>
 	<section class="parcour" id="parcour">
 		<div class="parcour-blouse">
 			<img class="image-blouse" src="images/blouse.png"/>
 			<div class="papillon"></div>
 		</div>
+		<div class="text-parcour-wrapper">
 		<div class="text-parcour">
 				<h2>Parcours</h2>
-				
+
 				<p>Au fil d'un parcours somme toute très classique je me suis enfermée dans une discipline qui l'est moins, avant de finalement choisir de faire une formation aux technologies web.</p>
 				<p>En 2004 j'obtiens mon bac scientifique et m'engage aussitôt dans des études de biologie puis de biochimie.</p>
 				<p>Grace à des modules d'informatique je m'initie à linux et au perl et décide de continuer dans cette voie. Je commence alors un master en bioinformatique.</p>
 				<p>J'apprends alors la programmation en perl, python, java et R, ainsi que la manipulation de linux.</p>
-				<p> En été 2008 Je réalise mon premier stage de bioinformatique au LCB, CNRS Joseph AIGUIER, à Marseille. Il avait pour objet l'analyse de meta données collectées dans l'océan indien.</p>
-				<p>Puis en Mars 2009 je pars en Allemagne dans la magnifique ville de Constance pour effectuer mon stage de fin d'études chez GATC.Biotech. J'y ai principalement développé des cibles pour puces à ADN anti sepsis.</p>
+				<p> En été 2008 Je réalise mon premier stage de bioinformatique au LCB, CNRS Joseph AIGUIER, à Marseille. Puis en Mars 2009 je pars en Allemagne dans la magnifique ville de Constance pour effectuer mon stage de fin d'études chez GATC.Biotech. J'y ai principalement développé des cibles pour puces à ADN anti sepsis.</p>
 				<p>J'obtiens alors mon Diplôme en septembre 2009. Un Master BBSG, bioinformatique, biologie structurale et génomique.</p>
-				<p>Dans la foulée, (Novembre 2009) je commence un emploi d'ingénieur en bioinformatique à l'institut de génétique et de biologie moléculaire et cellulaire, basé à Illkirch-Graffenstaden près de Strasbourg. En avril 2011, mon contrat prend fin.</p>
-				<p>	Je déménage alors à Nice en Septembre 2011, pour commencer un emploi d'ingénieur d'études en bioinformatique à l'institut sur le cancer et le vieillisement (IRCAN)</p>
-				<p>J'ai pu travailler sur plusieurs projets innovants et partir 1 mois à Shanghai pour rencontrer et former une équipe de collaborateurs.</p>
-				<p> En juin 2014 mon contrat prend fin et pour des raisons familiales, je n'ai pas pu retrouver d'emploi pendant environ un an. </p>
+				<p>Dans la foulée, (Novembre 2009) je commence un emploi d'ingénieur en bioinformatique à l'institut de génétique et de biologie moléculaire et cellulaire, basé à Illkirch-Graffenstaden près de Strasbourg. En avril 2011, mon contrat prend fin.Je déménage alors à Nice en Septembre 2011, pour commencer un emploi d'ingénieur d'études en bioinformatique à l'institut sur le cancer et le vieillisement (IRCAN).	J'ai pu travailler sur plusieurs projets innovants et partir 1 mois à Shanghai pour rencontrer et former une équipe de collaborateurs.</p>
+				<p> En juin 2014 mon contrat prend fin et pour des raisons familiales, je n'ai pas pu retrouver d'emploi pendant environ 9 mois. </p>
 				<p> Consciente d'avoir perdu un peu le fil de mon domaine je voulais renouer avec ma premiere envie qu'est la programation et la création j'entame alors la formation SIMPLonMARS en novembre 2015. </p>
 				<p>Je suis actuellement cette formation avec intérêt et recherche un stage d'un mois pour mars 2016.</p>
-				
+
 				<p>N'hésitez pas à me contacter</p>
 
 
@@ -159,7 +159,9 @@
 					<p><span> Genetics, Juillet 2010 :</span> "A strategy for direct mapping and identification of mutations by whole-genome sequencing." Zuryn S, et al. </p>
 				</div>
 			</div>
-		
+			</div>
+
+
 	</section>
 	<footer id="footer">
 	<div class="container-photo">
@@ -174,28 +176,35 @@
 " target="_blank">LinkedIn</a>, pour en savoir un peu plus. </p>
 	<p><i class="icon-social-twitter icons"></i> Sur Twitter suivez <a href="https://twitter.com/atomicfrog83" target="_blank">@atomicfrog83</a> pour avoir quelque actu web et developpement. </p>
 	<p><i class="icon-feed icons"></i> J'ai aussi un compte sur <a href="http://www.viadeo.com/en/profile/karine.jamet1" target="_blank">Viadeo</a></p>
-	
+
 	</div>
 	<div class="container-droite">
 	<p><i class="icon-notebook icons"></i> <a href="images/CV_Jamet_karine.pdf" download="CV-Karine-Jamet.pdf"> CV</a></p>
 	<p><i class="icon-graduation icons"></i>  <a href="http://simplonmars.eu/" target="_blank"> SIMPLonMARS</a> </p>
 	<a id="contact"><i class="icon-envelope icons"></i> Contact</a>
-	<div class="div-contact" id="form-div">	
-		<form  class="form" id="form" method="POST" name="mailForm" action="http://formspree.io/karine.jamet203@gmail.com">
-		  
+
+	<div class="div-contact" id="form-div">
+
+		<form  class="form" id="form" name="mailForm" action="http://formspree.io/karine.jamet203@gmail.com"
+      method="POST">
+
 		  <p class="name">
-			<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+			<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
 		  </p>
-		  
+
 		  <p class="email">
 			<input name="_replyto" type="email" required class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
 		  </p>
 		  
 		  <p class="text">
 			<textarea name="message" required class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+
 		  </p>
-		  
-		  
+
+			<p>
+				<input type="text" name="_gotcha" style="display:none" />
+			</p>
+
 		  <div class="submit">
 			<input type="submit" value="Envoyer" id="button-blue"/>
 			<div class="ease"></div>
