@@ -411,7 +411,7 @@ html, body, section {
   top: -100%;
   left: 35%;
   width: 60%;
-  height: 85%;
+  height: 100%;
   z-index: 20;
 }
 .text-parcour {

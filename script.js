@@ -296,6 +296,8 @@
 			})
 			.done(function() {
 				alert( "Merci pour votre e-mail! J'y répondrais des que possible." );
+				submenu.fadeOut();
+				
 		});
 	});
 
@@ -318,9 +320,13 @@
        $(".papillon").css({
          'transform-origin': pointOrW  + "px " + pointOrH +"px"
        });
-
+		
+		$(".text-parcour-wrapper").css({
+			'left':imageTaille
+		});
+	   
      }
-   });
+  });
 
 
   var imageTaille = $(".image-blouse").width();
