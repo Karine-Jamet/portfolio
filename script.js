@@ -228,6 +228,47 @@
 		]
 
 			var myPieChart = new Chart(ctx).Pie(dataPie,options);
+			
+			var ctx = document.getElementById("pieChartResponsive").getContext("2d");
+
+			var dataPie = [
+
+			{
+				value: 35,
+				color:"#E58601",
+				highlight: "#F2BB6D",
+				label: "Codeur"
+			},
+				{
+				value: 25,
+				color: "#F1C53A",
+				highlight: "#F2BB6D",
+				label: "Scientifique"
+			},
+			{
+				value: 5,
+				color: "#F1A63B",
+				highlight: "#F2BB6D",
+				label: "Artiste"
+			},
+			{
+				value: 25,
+				color: "#AE6600",
+				highlight: "#F2BB6D",
+				label: "Maman"
+
+			},
+			{
+				value: 10,
+				color: "#BE7D21",
+				highlight: "#F2BB6D",
+				label: "Gamer"
+			}
+		]
+
+			var myPieChart = new Chart(ctx).Pie(dataPie,options);
+			document.getElementById('js-legend').innerHTML = myPieChart.generateLegend();
+			
 
 
 
