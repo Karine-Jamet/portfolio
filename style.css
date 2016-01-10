@@ -853,7 +853,7 @@ div#form-div {
 	/*  FOOTER */
 	footer .container-photo {
 	  position: absolute;
-	  top: 20%;
+	  top: 5%;
 	  left: 1%;
 	  width:250px;
 	}
@@ -873,9 +873,9 @@ div#form-div {
 	footer .container-milieu-Phone{
 		display:block;
 		position: absolute;
-		top: 20%;
-		left: 40%;
-		width: 20%;
+		top: 5%;
+		right: 1%;
+		width: 200px;
 		margin-top:10px;
 	}
 	footer .container-milieu-Phone a{
@@ -883,11 +883,7 @@ div#form-div {
 		margin:10px;
 	}
 	footer .container-droite {
-	  padding: 20px;
-	  position: absolute;
-	  top: 20%;
-	  left: 60%;
-	  width: auto;
+	 display:none;
 	}
 	footer a {
 	  font-weight: bold;
