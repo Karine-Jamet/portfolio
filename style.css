@@ -185,6 +185,7 @@ html, body, section {
   text-align: center;
   padding-bottom: 30px;
   padding-top: 30px;
+  text-shadow:1px 1px white, 1px -1px white;
 }
 .proj-top {
   width: 300px;
@@ -195,7 +196,7 @@ html, body, section {
   background-image: url('images/projet-top.png');
   background-repeat: no-repeat;
   background-size: 300px auto;
-  z-index: 0;
+  z-index: -1;
 }
 .proj-bot {
   width: 300px;
@@ -809,6 +810,16 @@ div#form-div {
 	  height: auto;
 	}
 	
+	
+	/*  ------------------  Projets   ------------------------------  */
+	
+		.proj-detail {
+	  display: inline-block;
+	  width: 80%;
+	  height: 400px;
+	  margin: 10px;
+	  text-align: center;
+	}
 	/*  ------------------  Compétences   ------------------------------  */
 	
 	.comp h2 {
