@@ -352,6 +352,9 @@ html, body, section {
   width: 540px;
   height: 400px;
 }
+
+/*-------------- PARCOUR -------------------*/
+
 .parcour-blouse {
   position: relative;
   top: 0;
@@ -415,6 +418,9 @@ html, body, section {
   height: 100%;
   z-index: 20;
 }
+.text-parcour-wrapperResp{
+	display:none;
+}
 .text-parcour {
   height: 100%;
   overflow-y: auto;
@@ -439,6 +445,10 @@ html, body, section {
   margin-bottom: 5%;
   font-family: 'Nothing You Could Do', cursive;
 }
+
+/*---------------- FOOTER -----------------*/
+
+
 footer {
   min-height: 50%;
   width: 100%;
@@ -638,7 +648,7 @@ div#form-div {
 }
 
 
-/* Pour telephone */
+/*-------------------------- Pour telephone ----------------------------------------*/
 
 
 @media (max-width: 768px) { 
@@ -799,7 +809,7 @@ div#form-div {
 	  height: auto;
 	}
 	
-	/*    Compétences     */
+	/*  ------------------  Compétences   ------------------------------  */
 	
 	.comp h2 {
 	  margin-bottom: 10%;
@@ -850,7 +860,51 @@ div#form-div {
 	  width: 350px;
 	  height: 210px;
 	}
-	/*  FOOTER */
+/*-------------- PARCOUR -------------------*/
+
+
+	.text-parcour-wrapper {
+		display:none;
+	}
+	.text-parcour-wrapperResp{
+		display:block;
+		position: relative;
+	  top: -85%;
+	  left: 0%;
+	  width: 100%;
+	  height: 80%;
+	  z-index: 20;
+	  background-color: rgba(255,255,255,0.6);
+	}
+	.text-parcour {
+	  height: 100%;
+	  overflow-y: auto;
+	  text-shadow:1px 1px white;
+
+	}
+	.text-parcour h2 {
+	text-align:center;
+	  margin-bottom: 5%;
+	  font-family: 'Nothing You Could Do', cursive;
+	  font-size: 40px;
+	}
+	.article span {
+	  font-weight: bold;
+	}
+	.article {
+	  margin: 7%;
+	  width: 60%;
+	  height: auto;
+	}
+	.article h4 {
+	  font-weight: bold;
+	  font-size: 20px;
+	  margin-bottom: 5%;
+	  font-family: 'Nothing You Could Do', cursive;
+}
+
+/*----------------- FOOTER ------------------*/
+
 	footer .container-photo {
 	  position: absolute;
 	  top: 5%;
