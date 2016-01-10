@@ -384,30 +384,37 @@
     'transform-origin': pointOrW  + "px " + pointOrH +"px"
   });
 
-
-  $( window ).resize(function() {
-       var imageTaille = $(".image-blouse").width();
-    var pointOrW = imageTaille/2;
-
-    var imageHaut = $(".image-blouse").height();
-    var pointOrH = (imageHaut/100)*8;
-
-  $(".papillon").css({
-    'transform-origin': pointOrW  + "px " + pointOrH +"px"
-  });
-
-  });
-
  var submenu = $('div#form-div');
  var contactSize = submenu.height();
  var hauteur = $("footer").height();
- var marge = (hauteur/100)*20;
+ var marge = (hauteur/100)*30;
 
  submenu.hide();
+ 
+ 
  if(hauteur < (contactSize + $(".container-droite").height() + marge)){
    var toAdd = contactSize + hauteur;
    $("footer").height(toAdd);
  }
+ 
+ 
+  $( window ).resize(function() {
+       var imageTaille = $(".image-blouse").width();
+		var pointOrW = imageTaille/2;
+
+		var imageHaut = $(".image-blouse").height();
+		var pointOrH = (imageHaut/100)*8;
+
+	  $(".papillon").css({
+		'transform-origin': pointOrW  + "px " + pointOrH +"px"
+	});
+	
+	 if(hauteur < (contactSize + $(".container-droite").height() + marge)){
+	   var toAdd = contactSize + hauteur;
+	   $("footer").height(toAdd);
+	}
+
+  });
 
 
 
