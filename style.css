@@ -815,15 +815,15 @@ div#form-div {
 	  display: inline-block;
 	  text-align: center;
 	  margin: auto;
-	  width: 440px;
-	  height: 300px;
+	  width: 400px;
+	  height: 260px;
 	}
 	.pie-graphResponsive{
 	  display: inline-block;
 	  text-align: center;
 	  margin: auto;
-	  width: 440px;
-	  height: 450px;
+	  width: 400px;
+	  height: 410px;
 	}
 	.chart-legend li span{
 		display: inline-block;
@@ -847,8 +847,8 @@ div#form-div {
 	  display: inline-block;
 	  text-align: center;
 	  margin: auto;
-	  width: 440px;
-	  height: 300px;
+	  width: 400px;
+	  height: 260px;
 	}
 	/*  FOOTER */
 	footer .container-photo {
