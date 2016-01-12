@@ -38,16 +38,16 @@ html, body, section {
   top: 50%;
   left: 30%;
   background-image: url('images/petale1.jpg');
-  animation: down1 10s linear infinite, ondule1 10s linear infinite;
-  -moz-animation: down1 10s linear infinite, ondule1 10s linear infinite;
+  animation: ondule1 10s linear infinite;
+  -moz-animation: ondule1 10s linear infinite;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .petale2 {
   top: 69%;
   left: 50%;
-  animation: down2 10s linear infinite, ondule2 10s linear infinite;
-  -moz-animation: down2 10s linear infinite, ondule2 10s linear infinite;
+  animation: ondule2 10s linear infinite;
+  -moz-animation: ondule2 10s linear infinite;
   background-image: url('images/petale2.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@ html, body, section {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-@keyframes down1 {
+/*@keyframes down1 {
   20% {
     top: 50%;
     left: 30%;
@@ -71,8 +71,12 @@ html, body, section {
     top: calc(100% - 30px);
     left: 20%;
   }
-}
+}*/
 @keyframes ondule1 {
+  20% {
+    top: 50%;
+    left: 30%;
+  }
   25% {
     left: 30%;
   }
@@ -86,19 +90,21 @@ html, body, section {
     left: 20%;
   }
   100% {
-    left: 26%;
+    top: calc(100% - 30px);
+    left: 20%;
   }
 }
-@keyframes down2 {
+/*@keyframes down2 {
   5% {
     top: 69%;
   }
   100% {
     top: calc(100% - 30px);
   }
-}
+}*/
 @keyframes ondule2 {
   5% {
+    top: 69%;
     left: 50%;
   }
   30% {
@@ -111,19 +117,21 @@ html, body, section {
     left: 40%;
   }
   100% {
+    top: calc(100% - 30px);
     left: 46%;
   }
 }
-@keyframes down3 {
+/*@keyframes down3 {
   25% {
     top: 58%;
   }
   100% {
     top: calc(100% - 30px);
   }
-}
+}*/
 @keyframes ondule3 {
   25% {
+    top: 58%;
     left: 60%;
   }
   45% {
@@ -137,6 +145,7 @@ html, body, section {
   }
   100% {
     left: 66%;
+    top: calc(100% - 30px);
   }
 }
 .menu {
@@ -652,7 +661,7 @@ div#form-div {
 /*-------------------------- Pour telephone ----------------------------------------*/
 
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 	.branche {
 	  width: 100%;
 	  height: 80%;
@@ -667,7 +676,7 @@ div#form-div {
 	  background-repeat: no-repeat;
 	  overflow:hidden;
 	}
-	
+
 	.petale {
 	  width: 20px;
 	  height: 20px;
@@ -781,7 +790,7 @@ div#form-div {
 		left: 76%;
 	  }
 	}
-	
+
 	.menu {
 	  position: absolute;
 	  bottom: 20%;
@@ -809,10 +818,10 @@ div#form-div {
 	  width: 35%;
 	  height: auto;
 	}
-	
-	
+
+
 	/*  ------------------  Projets   ------------------------------  */
-	
+
 		.proj-detail {
 	  display: inline-block;
 	  width: 80%;
@@ -821,7 +830,7 @@ div#form-div {
 	  text-align: center;
 	}
 	/*  ------------------  Compétences   ------------------------------  */
-	
+
 	.comp h2 {
 	  margin-bottom: 10%;
 	  font-family: 'Nothing You Could Do', cursive;
@@ -853,13 +862,13 @@ div#form-div {
 		margin-right: 5px;
 		text-align:left;
 		color:white;
-		
+
 	}
 	.chart-legend li {
 		list-style:none;
 		text-align:left;
 		color:white;
-		
+
 	}
 	.pie-graph {
 	  display: none;
