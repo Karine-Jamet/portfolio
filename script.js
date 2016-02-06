@@ -409,6 +409,11 @@
 		'transform-origin': pointOrW  + "px " + pointOrH +"px"
 	});
 	
+	var submenu = $('div#form-div');
+	var contactSize = submenu.height();
+	var hauteur = $("footer").height();
+	var marge = (hauteur/100)*30;
+	
 	 if(hauteur < (contactSize + $(".container-droite").height() + marge)){
 	   var toAdd = contactSize + hauteur;
 	   $("footer").height(toAdd);
@@ -430,6 +435,8 @@
          console.log("animation completed");
      }
  });
+
+ //$('.text-parcour').perfectScrollbar();
 
 
 
