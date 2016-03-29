@@ -365,6 +365,7 @@ $(document).ready(function() {
     'transform-origin': pointOrW + "px " + pointOrH + "px"
   });
 
+
   var submenu = $('div#form-div');
   var contactSize = submenu.height();
   var hauteur = $("footer").height();
@@ -392,11 +393,12 @@ $(document).ready(function() {
       'transform-origin': pointOrW + "px " + pointOrH + "px"
     });
 
-    if (hauteur < (contactSize + $(".container-droite").height() + marge)) {
-      var toAdd = contactSize + hauteur;
+    if (hauteur < (contactSize + 250 + marge)) {
+      var toAdd = contactSize + 240 + marge + hauteur;
       $("footer").height(toAdd);
 
     }
+
 
   });
 
@@ -414,6 +416,8 @@ $(document).ready(function() {
       console.log("animation completed");
     }
   });
+
+ //$('.text-parcour').perfectScrollbar();
 
 
 
