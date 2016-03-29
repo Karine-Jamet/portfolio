@@ -56,8 +56,8 @@ html, body, section {
   top: 58%;
   left: 60%;
   height: 36px;
-  animation: down3 10s linear infinite, ondule3 10s linear infinite;
-  -moz-animation: down3 10s linear infinite, ondule3 10s linear infinite;
+  animation: ondule3 10s linear infinite;
+  -moz-animation:ondule3 10s linear infinite;
   background-image: url('images/petale3.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -72,6 +72,7 @@ html, body, section {
     left: 20%;
   }
 }*/
+
 @keyframes ondule1 {
   20% {
     top: 50%;
