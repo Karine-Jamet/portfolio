@@ -278,6 +278,9 @@ html, body, section {
 .apercu05 {
   background-image: url('images/projet-tweet.jpg');
 }
+.apercu06 {
+  background-image: url('images/devops.JPG');
+}
 .date {
   font-size: 12px;
   font-family: "Courier New", Courier, monospace;
