@@ -278,6 +278,19 @@ html, body, section {
 .apercu06 {
   background-image: url('images/devops.JPG');
 }
+.apercu07 {
+  background-image: url('images/tsuru.png');
+  background-size: cover;
+}
+.apercu08 {
+  background-image: url('images/gouter.png');
+    background-size: cover;
+}
+.apercu09 {
+  background-image: url('images/projet-tansu.png');
+    background-size: cover;
+}
+
 .date {
   font-size: 12px;
   font-family: "Courier New", Courier, monospace;
