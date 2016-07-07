@@ -29,25 +29,27 @@ html, body, section {
   overflow:hidden;
 }
 .petale {
+  opacity:0;
   width: 30px;
   height: 30px;
   position: absolute;
   background-color: white;
+  transition: opacity 1s ease;
 }
 .petale1 {
   top: 50%;
   left: 30%;
   background-image: url('images/petale1.jpg');
-  animation: ondule1 10s linear infinite;
-  -moz-animation: ondule1 10s linear infinite;
+  animation: ondule1 12s linear infinite;
+  -moz-animation: ondule1 12s linear infinite;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .petale2 {
   top: 69%;
   left: 50%;
-  animation: ondule2 10s linear infinite;
-  -moz-animation: ondule2 10s linear infinite;
+  animation: ondule2 8s linear infinite;
+  -moz-animation: ondule2 8s linear infinite;
   background-image: url('images/petale2.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -62,30 +64,27 @@ html, body, section {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-/*@keyframes down1 {
-  20% {
-    top: 50%;
-    left: 30%;
-  }
-  100% {
-    top: calc(100% - 30px);
-    left: 20%;
-  }
-}*/
 
 @keyframes ondule1 {
+  1%{
+    opacity: 0;
+  }
   20% {
     top: 50%;
     left: 30%;
+      opacity: 1;
   }
   25% {
     left: 30%;
+      opacity: 1;
   }
   40% {
     left: 25%;
+      opacity: 1;
   }
   60% {
     left: 28%;
+      opacity: 1;
   }
   80% {
     left: 20%;
@@ -95,24 +94,23 @@ html, body, section {
     left: 20%;
   }
 }
-/*@keyframes down2 {
-  5% {
-    top: 69%;
-  }
-  100% {
-    top: calc(100% - 30px);
-  }
-}*/
+
 @keyframes ondule2 {
+  1%{
+    opacity: 0;
+  }
   5% {
     top: 69%;
     left: 50%;
+      opacity: 0.5;
   }
   30% {
     left: 45%;
+      opacity: 1;
   }
   50% {
     left: 48%;
+      opacity: 1;
   }
   75% {
     left: 40%;
@@ -122,24 +120,23 @@ html, body, section {
     left: 46%;
   }
 }
-/*@keyframes down3 {
-  25% {
-    top: 58%;
-  }
-  100% {
-    top: calc(100% - 30px);
-  }
-}*/
+
 @keyframes ondule3 {
+  1%{
+    opacity: 0;
+  }
   25% {
     top: 58%;
     left: 60%;
+      opacity: 1;
   }
   45% {
     left: 65%;
+      opacity: 1;
   }
   65% {
     left: 62%;
+      opacity: 1;
   }
   85% {
     left: 70%;

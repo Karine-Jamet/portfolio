@@ -170,7 +170,7 @@ $(document).ready(function() {
 
 
       var data = {
-        labels: ["HTML5", "CSS3", "Javascript", "PHP", "Perl", "R", "C#", "Tarte Tatin", "Anglais"],
+        labels: ["HTML5", "CSS3", "Javascript", "PHP", "Perl", "Symfony", "AngularJS", "Tarte Tatin", "Anglais"],
         datasets: [{
             label: "Techniques",
             fillColor: "rgba(229,134,1,0.6)",
@@ -179,7 +179,7 @@ $(document).ready(function() {
             pointStrokeColor: "#E58601",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [85, 80, 73, 50, 83, 65, 40, 80, 90]
+            data: [95, 90, 83, 50, 73, 55, 80, 84, 92]
           },
 
         ]
@@ -272,7 +272,7 @@ $(document).ready(function() {
           pointColor: "rgba(229,134,1,1)",
           highlightFill: "rgba(220,220,220,0.75)",
           highlightStroke: "rgba(220,220,220,1)",
-          data: [4, 2, 5, 7, 2, 4]
+          data: [2, 5, 4, 7, 2, 4]
         }, ]
       };
 
