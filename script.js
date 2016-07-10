@@ -179,7 +179,7 @@ $(document).ready(function() {
             pointStrokeColor: "#E58601",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [95, 90, 83, 50, 73, 55, 80, 84, 92]
+            data: [85, 80, 73, 50, 63, 55, 70, 84, 82]
           },
 
         ]
@@ -264,7 +264,7 @@ $(document).ready(function() {
       var ctx = document.getElementById("barChart").getContext("2d");
 
       var dataBar = {
-        labels: ["Aikido", "Cha no yu", "Lecture", "Jeux video", "Peinture", "Pâtisserie"],
+        labels: [ "Cha no yu", "Lecture", "Jeux video", "Peinture", "Pâtisserie"],
         datasets: [{
           label: "My First dataset",
           fillColor: "rgba(229,134,1,0.6)",
@@ -272,7 +272,7 @@ $(document).ready(function() {
           pointColor: "rgba(229,134,1,1)",
           highlightFill: "rgba(220,220,220,0.75)",
           highlightStroke: "rgba(220,220,220,1)",
-          data: [2, 5, 4, 7, 2, 4]
+          data: [ 5, 4, 7, 2, 4]
         }, ]
       };
 
