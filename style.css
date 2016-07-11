@@ -336,7 +336,7 @@ html, body, section {
   }
 }
 
-/*        Coméptences                */
+/*        Compétences                */
 
 .comp {
   min-height: 100%;
@@ -441,7 +441,7 @@ html, body, section {
   position: relative;
   top: -100%;
   left: 35%;
-  width: 60%;
+  width: 55%;
   height: 100%;
   z-index: 20;
 }
