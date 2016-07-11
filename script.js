@@ -301,6 +301,26 @@ $(document).ready(function() {
     }
   });
 
+  $('a#contactPhone').click(function() {
+    // Trigger event on click
+
+    // Store the sub menu element in the 'submenu' var
+
+    if (submenu.is(":visible")) {
+      // Is the submenu visible?
+
+      submenu.fadeOut();
+      // If so, fade it out.
+
+    } else {
+
+      submenu.fadeIn();
+      // If not visible, fade it in.
+
+
+    }
+  });
+
   $("#form").submit(function(event) {
     event.preventDefault();
     var name = $("#name").val();
@@ -327,6 +347,31 @@ $(document).ready(function() {
       });
   });
 
+  $("#formPhone").submit(function(event) {
+    event.preventDefault();
+    var name = $("#namePhone").val();
+    var message = $("#commentPhone").val();
+    console.log(message);
+    var reply = $("#emailPhone").val();
+    $("#namePhone").val("");
+    $("#commentPhone").val("");
+    $("#emailPhone").val("");
+    $.ajax({
+        method: "POST",
+        url: "https://formspree.io/karine.jamet203@gmail.com",
+        data: {
+          name: name,
+          _replyto: reply,
+          essage: message
+        },
+        dataType: "json"
+      })
+      .done(function() {
+        alert("Merci pour votre e-mail! J'y répondrais des que possible.");
+        submenu.fadeOut();
+
+      });
+  });
 
 
 
