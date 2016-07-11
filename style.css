@@ -5,6 +5,15 @@ html, body, section {
   height: 100%;
   margin: 0;
 }
+
+#home h1{
+font-family: 'Nothing You Could Do', cursive;
+position: absolute;
+top: 72px;
+right: 204px;
+z-index: 1;
+}
+
 .sumie {
   width: 100%;
   height: 100%;
@@ -678,7 +687,7 @@ div#form-div, div#form-divPhone {
 /*-------------------------- Pour telephone ----------------------------------------*/
 
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
 	.branche {
 	  width: 100%;
 	  height: 80%;
@@ -693,6 +702,13 @@ div#form-div, div#form-divPhone {
 	  background-repeat: no-repeat;
 	  overflow:hidden;
 	}
+
+  #home h1 {
+    top: 197px;
+    right: 54px;
+    font-size: 23px;
+
+  }
 
 	.petale {
 	  width: 20px;
