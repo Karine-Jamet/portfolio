@@ -300,6 +300,11 @@ z-index: 1;
     background-size: cover;
 }
 
+.apercu10 {
+  background-image: url('images/projet-flower.jpg');
+    background-size: cover;
+}
+
 .date {
   font-size: 12px;
   font-family: "Courier New", Courier, monospace;
