@@ -420,11 +420,11 @@ $(document).ready(function() {
   submenu.hide();
 
 
-  if (hauteur < (contactSize + 240 + marge)) {
+  /*if (hauteur < (contactSize + 240 + marge)) {
     var toAdd = contactSize + 240 + marge + hauteur;
     $("footer").height(toAdd);
           console.log(toAdd);
-  }
+  }*/
 
 
   $(window).resize(function() {
@@ -438,11 +438,11 @@ $(document).ready(function() {
       'transform-origin': pointOrW + "px " + pointOrH + "px"
     });
 
-    if (hauteur < (contactSize + 250 + marge)) {
+    /*if (hauteur < (contactSize + 250 + marge)) {
       var toAdd = contactSize + 240 + marge + hauteur;
       $("footer").height(toAdd);
 
-    }
+    }*/
 
 
   });

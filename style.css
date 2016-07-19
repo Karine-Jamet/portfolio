@@ -492,18 +492,22 @@ z-index: 1;
 
 
 footer {
-  min-height: 50%;
+  /*min-height: 50%;*/
   width: 100%;
   background-color: #0b5394;
   color: white;
-  position: relative;
+  text-align: center;
+/*  position: relative;
   top: 0%;
-  left: 0%;
+  left: 0%;*/
 }
 footer .container-photo {
-  position: absolute;
+  /*position: absolute;
   top: 20%;
-  left: 15%;
+  left: 15%;*/
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
   padding: 20px;
   width:305px;
 }
@@ -518,16 +522,21 @@ footer .photo {
 }
 footer .container-milieu {
   padding: 20px;
-  position: absolute;
+  /*position: absolute;
   top: 20%;
-  left: 40%;
+  left: 40%;*/
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
   width: 20%;
 }
 footer .container-droite {
   padding: 20px;
-  position: absolute;
+  text-align: left;
+/*  position: absolute;
   top: 20%;
-  left: 60%;
+  left: 60%;*/
+  display: inline-block;
   width: 20%;
 }
 footer a {
@@ -680,10 +689,16 @@ a#contact,  a#contactPhone {
   cursor: pointer;
 }
 div#form-div, div#form-divPhone {
-  position: absolute;
+/*position: absolute;*/
   padding: 10px;
-  display: block;
+/*  display: block;*/
 }
+
+div#form-divPhone {
+  width: 70%;
+
+}
+
 
 .container-milieu-Phone{
 	display:none;
@@ -967,10 +982,15 @@ div#form-div, div#form-divPhone {
 
 /*----------------- FOOTER ------------------*/
 
+footer{
+  position: static;
+
+}
+
 	footer .container-photo {
-	  position: absolute;
+	/*  position: absolute;
 	  top: 5%;
-	  left: 1%;
+	  left: 1%;*/
 	  width:40%;
 	}
 	footer .photo {
@@ -987,10 +1007,12 @@ div#form-div, div#form-divPhone {
 	 display:none;
 	}
 	footer .container-milieu-Phone{
-		display:block;
-		position: absolute;
+		display:inline-block;;
+	/*	position: absolute;
 		top: 5%;
-		right: 1%;
+		right: 1%;*/
+    vertical-align: top;
+    text-align: left;
 		width: 200px;
 		margin-top:10px;
 	}
