@@ -229,7 +229,7 @@ z-index: 1;
 .proj-detail {
   display: inline-block;
   width: 380px;
-  height: 400px;
+  /*height: 400px;*/
   margin: 10px;
   text-align: center;
   vertical-align: text-top;
@@ -864,7 +864,7 @@ div#form-div, div#form-divPhone {
 		.proj-detail {
 	  display: inline-block;
 	  width: 80%;
-	  height: 400px;
+	  /*height: 400px;*/
 	  margin: 10px;
 	  text-align: center;
 	}
@@ -916,8 +916,11 @@ div#form-div, div#form-divPhone {
 	  display: inline-block;
 	  text-align: center;
 	  margin: auto;
-	  width: 350px;
-	  height: 210px;
+	  /*width: 350px;*/
+	  /*height: 210px;*/
+    width: 300px;
+    height: 182px;
+    margin-left: -68px;
 	}
 /*-------------- PARCOUR -------------------*/
 
